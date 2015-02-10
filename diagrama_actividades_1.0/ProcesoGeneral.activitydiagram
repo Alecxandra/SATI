@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c604e666-3723-4ae5-aa89-f110e0f6eea5" name="Proceso general" linkedPackageId="4ae0e231-631a-490a-b466-9f182797897a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="eb0ba017-ddc6-4e5b-adcf-e23a453d53c4">
+      <elementDefinition Id="287a4db8-b468-4c68-9374-e5b65987aff0" />
+      <body>Precondiciones
+
+1.Disponibilidad de un dispositivo con acceso a internet.
+</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="d9288c50-2e8b-4f55-9dac-a81ecfd59e52" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="6b8379e2-5d50-44f2-b0b1-092e91277970" name="Proceso general" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b44be16c-e0fa-48fb-9c0d-565f94a81359" />
+        <nodes>
+          <objectNode Id="06b39cee-a90e-489c-b252-fe26117a0cd1" name="Cliente" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="ef8eef00-808c-4e64-9d48-d61914cc13d2" />
+            <upperBound>
+              <literalInteger Id="a440a047-51e5-47a6-a778-bc21ac8ffb15" name="2147483647" value="2147483647">
+                <elementDefinition Id="258015a3-ea5f-4ffd-801b-f5645578ae12" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="0156f49f-61a7-4edd-bc85-a0e38e02963e" name="Administrador" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a454f068-6ddd-4239-a28f-739aab7f748c" />
+            <upperBound>
+              <literalInteger Id="8e989e02-c8ee-42cc-8a30-307e3cc1ea72" name="2147483647" value="2147483647">
+                <elementDefinition Id="e08b6aaa-5375-4abc-935f-ac410c9609ed" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="1cde4cab-ad76-41cf-aa5c-be85e78cab69" name="Taquillero" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cc106866-7faf-42ba-9acb-97cc6e31de94" />
+            <upperBound>
+              <literalInteger Id="737f85fb-2795-4190-ab93-960d591382d4" name="2147483647" value="2147483647">
+                <elementDefinition Id="efe24c50-654e-4458-85c7-ed55ec9abbe4" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="d9288c50-2e8b-4f55-9dac-a81ecfd59e52" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7d14b628-edd9-4fa8-a68d-1e536ad484ba" />
+            <flowNodeTargets>
+              <controlFlow Id="cd2a18c2-5460-4ab2-95ec-d47605a95ded" isLeaf="false">
+                <callBehaviorActionMoniker Id="d957dc4f-3559-4ede-9813-0aaf79d7ab5b" LastKnownName="Crear y editar contenido" />
+                <elementDefinition Id="f800ab13-348c-4842-8641-ef781f9016ec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="bc07b75e-17db-45a5-b6ca-1b6396cec861" name="Publicar contenido" isLeaf="false">
+            <elementDefinition Id="b5856df6-2422-44ac-9488-216302843a50" />
+            <flowNodeTargets>
+              <controlFlow Id="37695c5b-6ef8-4f2c-aefd-9d0116461694" isLeaf="false">
+                <forkNodeMoniker Id="dece18f0-6cda-4edc-9c8e-059d138892b6" LastKnownName="Fork1" />
+                <elementDefinition Id="dca612c0-98a6-481a-a48c-1743cbf4755e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="20029e72-0c38-4713-92fc-e2b6b6e9ed16" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="7b67b6c5-1187-48a6-a005-20c75e0563c6" />
+          </activityFinalNode>
+          <callBehaviorAction Id="d957dc4f-3559-4ede-9813-0aaf79d7ab5b" name="Crear y editar contenido" isLeaf="false">
+            <elementDefinition Id="e718ed00-411a-49cc-b13d-cfb1758a6a47" />
+            <flowNodeTargets>
+              <controlFlow Id="2f7a8df0-91e4-4a46-83c2-884ae256153f" isLeaf="false">
+                <opaqueActionMoniker Id="bc07b75e-17db-45a5-b6ca-1b6396cec861" LastKnownName="Publicar contenido" />
+                <elementDefinition Id="6f3cfbbc-3a15-4d9e-bd9e-5f9b645c218b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <forkNode Id="dece18f0-6cda-4edc-9c8e-059d138892b6" name="Fork1" isLeaf="false">
+            <elementDefinition Id="b967aaff-7c23-4418-bff2-7bd7d3b73bd0" />
+            <flowNodeTargets>
+              <controlFlow Id="7918e536-bb25-4c7d-bd7b-c76778cd8bd8" isLeaf="false">
+                <forkNodeMoniker Id="fc720b6c-2dde-416a-ad90-4045dc5254f1" LastKnownName="Fork2" />
+                <elementDefinition Id="d25b894c-1516-42be-a3e3-bb95c1614d35" />
+              </controlFlow>
+              <controlFlow Id="6378595d-4f44-41b0-a413-7c64fe2da2b6" isLeaf="false">
+                <callBehaviorActionMoniker Id="bf35bbbd-1f9b-4aec-af54-2c70e7dba4ed" LastKnownName="Enviar correos masivos" />
+                <elementDefinition Id="a7b63a65-a103-4a48-aec4-41977699444f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <callBehaviorAction Id="bf35bbbd-1f9b-4aec-af54-2c70e7dba4ed" name="Enviar correos masivos" isLeaf="false">
+            <elementDefinition Id="66f68e0d-7c83-4048-97c3-0ad145d19b76" />
+            <flowNodeTargets>
+              <controlFlow Id="e4db9553-8051-4118-bbac-c241be863575" isLeaf="false">
+                <activityFinalNodeMoniker Id="ff9a3e5f-7e9f-4dcd-8621-575fde2b61ef" LastKnownName="ActivityFinal3" />
+                <elementDefinition Id="43635f90-60ee-4c41-b561-62e7e61c71a4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="ff9a3e5f-7e9f-4dcd-8621-575fde2b61ef" name="ActivityFinal3" isLeaf="false">
+            <elementDefinition Id="a9a3d166-d002-4b76-bcd6-fc2cf891b7ae" />
+          </activityFinalNode>
+          <forkNode Id="fc720b6c-2dde-416a-ad90-4045dc5254f1" name="Fork2" isLeaf="false">
+            <elementDefinition Id="b7289f18-78b4-4099-a20e-69a49d47b198" />
+            <flowNodeTargets>
+              <controlFlow Id="0601a98a-8334-4665-8cc8-74c48ac4e48a" isLeaf="false">
+                <callBehaviorActionMoniker Id="5573d75d-37ee-41eb-8361-4c319534eb6a" LastKnownName="Enviar Sugerencias" />
+                <elementDefinition Id="9dd72aae-7d87-47aa-aefe-f5b0ced1d83b" />
+              </controlFlow>
+              <controlFlow Id="77109ff6-b7b2-4915-bea8-5036e5a309b9" isLeaf="false">
+                <callBehaviorActionMoniker Id="e1f8316f-3e86-4c98-b852-d8ee55b04b82" LastKnownName="Ver contenido" />
+                <elementDefinition Id="ccb8fc2d-855d-48ba-8609-15cd79863fd0" />
+              </controlFlow>
+              <controlFlow Id="10205ebf-9cc5-4d74-96e3-2d5e1fbab5e3" isLeaf="false">
+                <callBehaviorActionMoniker Id="cefa8344-f5fc-443c-920c-139a19079b85" LastKnownName="Consultar y reservar butacas" />
+                <elementDefinition Id="01699802-ce07-4065-af80-0fe571f92555" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <callBehaviorAction Id="5573d75d-37ee-41eb-8361-4c319534eb6a" name="Enviar Sugerencias" isLeaf="false">
+            <elementDefinition Id="2e383060-c11b-477a-b8e6-9059dd5beb4c" />
+            <flowNodeTargets>
+              <controlFlow Id="1a120716-7e96-48d8-8fde-3b22314dc88c" isLeaf="false">
+                <activityFinalNodeMoniker Id="f4e22d26-7bf9-47e3-9fb0-8e8ef61d1ce8" LastKnownName="ActivityFinal31" />
+                <elementDefinition Id="d569df3f-5001-447f-b96f-9966766fd3f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="f4e22d26-7bf9-47e3-9fb0-8e8ef61d1ce8" name="ActivityFinal31" isLeaf="false">
+            <elementDefinition Id="86efcc4f-6eaa-4b32-87e1-e6a62680f7d5" />
+          </activityFinalNode>
+          <callBehaviorAction Id="e1f8316f-3e86-4c98-b852-d8ee55b04b82" name="Ver contenido" isLeaf="false">
+            <elementDefinition Id="f4dd30b3-0a33-4cb7-adcd-b3caeff2501e" />
+            <flowNodeTargets>
+              <controlFlow Id="9a2f213e-bf06-44c2-8860-ea2a3274cce2" isLeaf="false">
+                <activityFinalNodeMoniker Id="d66807ad-4d72-4c72-b50c-288fdad515b1" LastKnownName="ActivityFinal311" />
+                <elementDefinition Id="27e7674c-97ff-49a1-84bd-3617bf50e4bb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="d66807ad-4d72-4c72-b50c-288fdad515b1" name="ActivityFinal311" isLeaf="false">
+            <elementDefinition Id="52dca926-5344-4eab-972a-74478945ecac" />
+          </activityFinalNode>
+          <callBehaviorAction Id="cefa8344-f5fc-443c-920c-139a19079b85" name="Consultar y reservar butacas" isLeaf="false">
+            <elementDefinition Id="caa625c4-9d7e-4316-9113-3a9aabefd634" />
+            <flowNodeTargets>
+              <controlFlow Id="4b4c004a-64b0-4980-8670-556ae8a3aa31" isLeaf="false">
+                <callBehaviorActionMoniker Id="ac415e46-4835-4654-9557-7f09377d5eec" LastKnownName="Entregar tickets" />
+                <elementDefinition Id="677b0eec-d983-4821-b7c6-65b4bcd94010" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="ac415e46-4835-4654-9557-7f09377d5eec" name="Entregar tickets" isLeaf="false">
+            <elementDefinition Id="b92592f8-f53d-4021-853a-8bcb8602c5b6" />
+            <flowNodeTargets>
+              <controlFlow Id="d27de602-c71a-4de6-959f-973bea782f47" isLeaf="false">
+                <activityFinalNodeMoniker Id="20029e72-0c38-4713-92fc-e2b6b6e9ed16" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="cadc9efc-d3ab-46f4-b91b-60147d228ba6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="4ae0e231-631a-490a-b466-9f182797897a" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e29589fa-093e-4925-8056-9fdfaa90e8bc">
+        <profileInstance Id="88928eb5-c965-4680-8e00-f16bca96db98" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d117f1cd-6593-485d-a829-04e579191691">
+        <profileInstance Id="fc54c1ec-5155-4ff8-9e39-821278161f46" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

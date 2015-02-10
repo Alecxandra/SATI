@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9adfb766-c120-419f-b9f6-06f474754f06" name="Entrega de Tickets" linkedPackageId="051d9398-e615-46f2-95f6-1f17a514ebdf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="58abbec3-4df7-4c45-a1a5-6208ee4911c3">
+      <elementDefinition Id="6e16601b-2c38-4b38-ab11-ebe1fd2aeb3d" />
+      <body>Precondiciones
+1.Haber recibido token.</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="9f81446d-e03f-4107-9ec1-7e9ef19eb8e7" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="4842fe50-0935-4fc9-be5e-25289626b19a">
+      <profileInstance Id="e5b2b851-9e11-443e-a201-a9b93e6cdd83" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7b7777cd-592a-4535-9836-0f51f601195a">
+      <profileInstance Id="49ceb463-544c-4858-9652-e388ab9330b5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="511734ee-732d-42c2-b9f5-dae665a45ffa" name="Entrega de Tickets" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="87b812a2-7cf6-46b7-9b7a-d4191c6ff8ef" />
+        <nodes>
+          <objectNode Id="b93d30d3-b7f8-4170-b191-fce2f0dc86b7" name="Taquillero" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="0662d1a0-fd96-4194-a7bf-2aed74558002" />
+            <upperBound>
+              <literalInteger Id="d2734a90-b4bd-4bf2-be6c-bf7be5a4f5ca" name="2147483647" value="2147483647">
+                <elementDefinition Id="3932056a-0190-443f-acc9-c5b184fa117c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="9f81446d-e03f-4107-9ec1-7e9ef19eb8e7" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7b2d659d-2762-430a-8d45-6e3fa01e2af6" />
+            <flowNodeTargets>
+              <controlFlow Id="14435673-d53f-483d-a662-9f38affba355" isLeaf="false">
+                <callBehaviorActionMoniker Id="4b61fc1b-bfa5-4186-9a19-b1d13ae07439" LastKnownName="Comprobar validez de token" />
+                <elementDefinition Id="99d5c001-747c-43c5-b155-50ab6504fa0d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction Id="4b61fc1b-bfa5-4186-9a19-b1d13ae07439" name="Comprobar validez de token" isLeaf="false">
+            <elementDefinition Id="cfc4efe1-a120-4632-bebb-1b20273e457d" />
+            <flowNodeTargets>
+              <controlFlow Id="c0ff0ce5-b41e-4d15-ad2d-3429b0327160" isLeaf="false">
+                <decisionNodeMoniker Id="e248ce47-471f-4528-a0bc-8fa6ac166581" LastKnownName="Decision1" />
+                <elementDefinition Id="ac325dc5-324b-48d8-a9bc-21309dfc56a9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <decisionNode Id="e248ce47-471f-4528-a0bc-8fa6ac166581" name="Decision1" isLeaf="false">
+            <elementDefinition Id="3e5af705-5ef3-448b-aa50-4d123ef9cc0b" />
+            <flowNodeTargets>
+              <controlFlow Id="e172f865-1353-4477-94ad-5a2c60354237" guard="token invalido" isLeaf="false">
+                <callBehaviorActionMoniker Id="9e20a656-8fd9-4efe-b4ca-3c5c8f8213f9" LastKnownName="No entregar ticket" />
+                <elementDefinition Id="7f8b1693-46d9-4279-b9dc-991eba543964" />
+              </controlFlow>
+              <controlFlow Id="fe3820d9-6a25-40ce-a827-32839b2c0a2a" guard="token valido" isLeaf="false">
+                <callBehaviorActionMoniker Id="d6fd54c8-d87b-4091-9058-bb7acc254c45" LastKnownName="Marcar token como entregado" />
+                <elementDefinition Id="8e0d474e-d959-468a-a5ef-100def0da49c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <callBehaviorAction Id="9e20a656-8fd9-4efe-b4ca-3c5c8f8213f9" name="No entregar ticket" isLeaf="false">
+            <elementDefinition Id="d54ff44e-855d-469b-ab5a-057a0ce34c8e" />
+            <flowNodeTargets>
+              <controlFlow Id="420cbb4b-be7b-4b93-a03f-0434ced2f5d7" isLeaf="false">
+                <activityFinalNodeMoniker Id="d7bfd32a-8e05-4d11-b7eb-c717866be9bb" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b6dd03b8-5842-4049-bdbb-ae6a5ab340a7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="4b35276b-71fd-4f5e-9bbf-7ad8ccaf42c3" name="Entregar ticket" isLeaf="false">
+            <elementDefinition Id="671a5d9e-69f0-4048-b455-a4a177634de0" />
+            <flowNodeTargets>
+              <controlFlow Id="6f420dda-442b-4481-acb1-16b5e19b634c" isLeaf="false">
+                <activityFinalNodeMoniker Id="3700180c-bbab-48e9-a552-d047b0a08605" LastKnownName="ActivityFinal11" />
+                <elementDefinition Id="494b3d3e-6823-4461-af5d-14e2ca9b7140" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="d6fd54c8-d87b-4091-9058-bb7acc254c45" name="Marcar token como entregado" isLeaf="false">
+            <elementDefinition Id="4ca0e482-b5ae-426b-8234-8716d1ad4235" />
+            <flowNodeTargets>
+              <controlFlow Id="3a967bc5-dacc-40d6-9c8a-33c1ff76313d" isLeaf="false">
+                <callBehaviorActionMoniker Id="4b35276b-71fd-4f5e-9bbf-7ad8ccaf42c3" LastKnownName="Entregar ticket" />
+                <elementDefinition Id="9e7cc7d4-8e41-4009-b609-884c7c064c13" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="d7bfd32a-8e05-4d11-b7eb-c717866be9bb" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5e96593d-4b70-43af-846c-97022d1a545c" />
+          </activityFinalNode>
+          <activityFinalNode Id="3700180c-bbab-48e9-a552-d047b0a08605" name="ActivityFinal11" isLeaf="false">
+            <elementDefinition Id="69927e0c-11f1-4697-95fc-03fbba6966d8" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="051d9398-e615-46f2-95f6-1f17a514ebdf" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3bc26ad1-ae64-4bcc-b536-83d2196caa69" name="Envio de correos masivos" linkedPackageId="c81fcdfd-f737-436b-9522-d2475531b49e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="3dbe482a-bae0-4be1-8c52-9bd019d13e9e">
+      <elementDefinition Id="fdfecf83-5e43-4b7e-a2dd-f6ec8b15b7ba" />
+      <body>Precondiciones:
+
+1. Disponibilidad de noticias
+
+2. Usuarios registrados</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="6c0e7e99-70ac-441a-86a4-1519d0f3f768" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="aae1cfac-d86e-45ad-a092-5d20e22d573e" name="Envio de correos masivos" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ba2369f0-2e47-411c-97bd-9919b96cfc88" />
+        <nodes>
+          <objectNode Id="c61087e3-fea4-49b0-8fe3-2c3e303f750d" name="Administrador" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="c7bbab1d-a3b9-4522-86b2-a85710a1c414" />
+            <upperBound>
+              <literalInteger Id="dd454e4e-b150-4476-8b2e-7fe9ec406a3e" name="2147483647" value="2147483647">
+                <elementDefinition Id="6dbb2aac-0c13-48ca-9b5b-ce7cc457b8ac" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="6c0e7e99-70ac-441a-86a4-1519d0f3f768" name="Initial1" isLeaf="false">
+            <elementDefinition Id="20569929-63a4-4b4c-8851-33659d4c63dc" />
+            <flowNodeTargets>
+              <controlFlow Id="03abe762-257f-4c30-9b13-737d9b9b2480" isLeaf="false">
+                <forkNodeMoniker Id="e959fa67-153e-427d-b82d-e76bed9f1448" LastKnownName="Fork1" />
+                <elementDefinition Id="e47b3673-10f7-4857-bd40-cb80754b585f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction Id="4d1ea4e4-3bdd-4111-92fb-cfeb43a645f3" name="Seleccionar noticias a enviar" isLeaf="false">
+            <elementDefinition Id="6f37273c-c63f-4b6c-a457-d573ce917d3d" />
+            <flowNodeTargets>
+              <controlFlow Id="15575b12-128e-4ea0-b775-7151a75dadc3" isLeaf="false">
+                <joinNodeMoniker Id="0317baf0-4718-4128-b48a-3347d67cdf80" LastKnownName="Join1" />
+                <elementDefinition Id="3ff1a593-05f6-4cda-a915-c6f7605156b6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="6caeb8dd-d447-4030-9032-179fcd38c9bc" name="Enviar correo másivo" isLeaf="false">
+            <elementDefinition Id="74928d1d-3856-4c0b-b6a6-c86984db2160" />
+            <flowNodeTargets>
+              <controlFlow Id="c7bc6e71-990b-4da9-9171-58336a1d5017" isLeaf="false">
+                <activityFinalNodeMoniker Id="2529a9b6-8737-4b32-8cfc-cccea26afe87" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="fdcb7011-f1df-4835-b6f3-e80b6b2ef144" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="2529a9b6-8737-4b32-8cfc-cccea26afe87" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="13f8b571-5d23-4ffa-a757-504125fc1386" />
+          </activityFinalNode>
+          <callBehaviorAction Id="d0530134-cd25-4e06-9d01-61d16d00c38e" name="Seleccionar usuarios receptores" isLeaf="false">
+            <elementDefinition Id="16304f43-4e67-4619-ae2a-d0b54130f738" />
+            <flowNodeTargets>
+              <controlFlow Id="a0600b61-7d93-404c-a83d-ef9c1d01511e" isLeaf="false">
+                <callBehaviorActionMoniker Id="6caeb8dd-d447-4030-9032-179fcd38c9bc" LastKnownName="Enviar correo másivo" />
+                <elementDefinition Id="085a56f8-d22f-4bfb-a246-722a0f6964c5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <forkNode Id="e959fa67-153e-427d-b82d-e76bed9f1448" name="Fork1" isLeaf="false">
+            <elementDefinition Id="f12cc13b-d175-4592-a4c0-00f28b74a7e5" />
+            <flowNodeTargets>
+              <controlFlow Id="260c6e84-5b41-483b-9e56-a355325ea912" isLeaf="false">
+                <callBehaviorActionMoniker Id="4d1ea4e4-3bdd-4111-92fb-cfeb43a645f3" LastKnownName="Seleccionar noticias a enviar" />
+                <elementDefinition Id="df0b6b45-1fdc-4a15-a949-65fde8480ab6" />
+              </controlFlow>
+              <controlFlow Id="c1de7aa8-8ed8-4bd8-a0a6-bd2c3dc63752" isLeaf="false">
+                <callBehaviorActionMoniker Id="05d8c715-7bca-40ab-8562-8a37762ffa08" LastKnownName="Redactar correo" />
+                <elementDefinition Id="e1e28e81-2ace-4b11-921b-1915fb333466" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <callBehaviorAction Id="05d8c715-7bca-40ab-8562-8a37762ffa08" name="Redactar correo" isLeaf="false">
+            <elementDefinition Id="604e4424-8838-4afe-8283-f181400b44fa" />
+            <flowNodeTargets>
+              <controlFlow Id="196bd634-fba8-4485-9766-066881a31a24" isLeaf="false">
+                <joinNodeMoniker Id="0317baf0-4718-4128-b48a-3347d67cdf80" LastKnownName="Join1" />
+                <elementDefinition Id="e4c940a4-0029-4e27-bee7-fe4d34acc1b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <joinNode Id="0317baf0-4718-4128-b48a-3347d67cdf80" name="Join1" isLeaf="false">
+            <elementDefinition Id="f3b823ca-1be4-43fa-93c6-a02b5fdb86b0" />
+            <flowNodeTargets>
+              <controlFlow Id="44758639-1f26-4fbc-b305-ab45faabfb4f" isLeaf="false">
+                <callBehaviorActionMoniker Id="d0530134-cd25-4e06-9d01-61d16d00c38e" LastKnownName="Seleccionar usuarios receptores" />
+                <elementDefinition Id="f9ae256a-2e8a-4cf4-932c-e2a8907e9a38" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c81fcdfd-f737-436b-9522-d2475531b49e" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1992889a-e5c3-445f-8796-035cd4e77f6f">
+        <profileInstance Id="1367331d-dac5-4664-bbb8-fe390b462256" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="aa3af6e8-1016-49f1-a429-25de4649b0f6">
+        <profileInstance Id="cce2ae2a-652f-4709-b7a4-fe2f3cf88898" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

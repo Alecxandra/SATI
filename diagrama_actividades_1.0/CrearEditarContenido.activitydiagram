@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="871e9504-c904-4994-a509-df7ce4f5ac27" name="Crear y Editar contenido" linkedPackageId="6e6bc55c-e499-443d-ac3c-e11ce1b333c2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="38beca02-540b-47b0-93f4-2dff570b72ef">
+      <profileInstance Id="39edf65f-2b6a-4386-9e6d-055f79f2a987" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="efbf5fbb-69d0-48a3-9c08-bf6b62658f0d">
+      <profileInstance Id="40f72cd3-ab29-4cd2-a2f8-10bfb73c40a2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="a1251044-db1e-4e38-81fb-e2e1e0f677f8" name="Crear y Editar contenido" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="bc040701-3237-41ec-8f1a-b2c7c285e9f2" />
+        <nodes>
+          <initialNode Id="fbbece87-ae48-4eb9-9072-3d884126fa04" name="Initial1" isLeaf="false">
+            <elementDefinition Id="73f14c6c-1823-42e9-84d8-7759f445ef8f" />
+            <flowNodeTargets>
+              <controlFlow Id="7309f242-e7fe-4a70-9bbc-7a42eccc5323" isLeaf="false">
+                <decisionNodeMoniker Id="ec281488-2cff-4a8f-858a-c9a17ed88821" LastKnownName="Decision1" />
+                <elementDefinition Id="2c984d48-0a88-44ce-9421-a3acc480ff05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <objectNode Id="e3020912-6b78-4605-b254-b36fc6b99ce0" name="Administrador" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cfe21c31-8003-4284-85d1-62215f0546e3" />
+            <upperBound>
+              <literalInteger Id="63dffa18-8ec8-44e1-9145-525e43a2dda4" name="2147483647" value="2147483647">
+                <elementDefinition Id="f2669349-b702-4e7e-bb4b-b7adcc99373d" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="ec281488-2cff-4a8f-858a-c9a17ed88821" name="Decision1" isLeaf="false">
+            <elementDefinition Id="62b34c0f-5ed9-49a3-be44-f224b3dd5eb3" />
+            <flowNodeTargets>
+              <controlFlow Id="f5fb8de0-0c7e-45d6-9164-cac6072d1fc1" guard="Crear" isLeaf="false">
+                <forkNodeMoniker Id="bb6d3076-5887-48f1-b426-ce877beb9da8" LastKnownName="Fork1" />
+                <elementDefinition Id="509c53e2-048c-4e0c-aabe-b6122ace4bc2" />
+              </controlFlow>
+              <controlFlow Id="cdc71818-4283-4e5f-85d2-911a5104b72f" guard="Editar" isLeaf="false">
+                <forkNodeMoniker Id="4b61ceae-a411-4c3f-bda5-17052bbc9b4a" LastKnownName="Fork2" />
+                <elementDefinition Id="5181dda4-76c4-47f9-bfa1-9cd2511da29f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <forkNode Id="bb6d3076-5887-48f1-b426-ce877beb9da8" name="Fork1" isLeaf="false">
+            <elementDefinition Id="c9500990-ec7a-49c7-9a81-688cc9735ec3" />
+            <flowNodeTargets>
+              <controlFlow Id="8a9bc9d9-856d-4406-af6d-c9494484adea" isLeaf="false">
+                <callBehaviorActionMoniker Id="cbce293b-e7d5-41c8-b2f0-ce260e036499" LastKnownName="Crear obra" />
+                <elementDefinition Id="c224b33a-a5fe-4c94-aa57-a90e345cff23" />
+              </controlFlow>
+              <controlFlow Id="c2023789-b84e-4eb1-a949-cb3f0a9ccf4a" isLeaf="false">
+                <callBehaviorActionMoniker Id="96ed9f58-86b4-4ab2-8f06-d9c9708a5899" LastKnownName="Crear perfil de actor" />
+                <elementDefinition Id="ac44a0e2-f014-4b86-98d0-1ed8c23f5881" />
+              </controlFlow>
+              <controlFlow Id="3cdb7c9e-75fe-4dc3-85c1-9dd2e8ccb3ae" isLeaf="false">
+                <callBehaviorActionMoniker Id="b117bf0c-e3eb-4a85-80b2-d8102fdcd1b8" LastKnownName="Crear noticia" />
+                <elementDefinition Id="54827254-fbe4-43ed-9e77-a22820dc17f0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <forkNode Id="4b61ceae-a411-4c3f-bda5-17052bbc9b4a" name="Fork2" isLeaf="false">
+            <elementDefinition Id="6a3ef3f3-6a57-4795-8bfb-58d602a6a828" />
+            <flowNodeTargets>
+              <controlFlow Id="a2fd4203-9c4b-478a-aa1f-fabcc078a071" isLeaf="false">
+                <callBehaviorActionMoniker Id="93d9d2c9-1555-4b19-946b-68eece832a84" LastKnownName="Editar obra" />
+                <elementDefinition Id="afc99af0-fc38-4641-843d-c2f38525b85a" />
+              </controlFlow>
+              <controlFlow Id="38cf6fe8-f837-4753-80f6-e78902fd74cb" isLeaf="false">
+                <callBehaviorActionMoniker Id="b6850e91-fe59-4afc-a737-58276c879955" LastKnownName="Editar perfil de actor" />
+                <elementDefinition Id="bb8b3047-4855-44b1-bcc3-288485438477" />
+              </controlFlow>
+              <controlFlow Id="ce9f09be-96c9-4613-af28-d437d005b963" isLeaf="false">
+                <callBehaviorActionMoniker Id="64e3f55a-7594-49c4-ad82-a8d6a905ba9f" LastKnownName="Editar información general" />
+                <elementDefinition Id="ebf9554b-1150-479b-abf6-738285b7b3e0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <callBehaviorAction Id="cbce293b-e7d5-41c8-b2f0-ce260e036499" name="Crear obra" isLeaf="false">
+            <elementDefinition Id="b87e75e1-afb4-4280-be13-ebdab1f178a7" />
+            <flowNodeTargets>
+              <controlFlow Id="a4f7eace-4d69-4ea2-9302-f01d7ef76b2d" isLeaf="false">
+                <activityFinalNodeMoniker Id="e624960a-2fe6-464d-be80-0f73a5957562" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="90eddb60-e898-4883-bbdc-a7930919bbdd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="96ed9f58-86b4-4ab2-8f06-d9c9708a5899" name="Crear perfil de actor" isLeaf="false">
+            <elementDefinition Id="8ffd0d44-fe8c-48ee-94a6-d4d2120fb57e" />
+            <flowNodeTargets>
+              <controlFlow Id="f918f890-b2dc-44c9-93fc-7bf98f3a9a6b" isLeaf="false">
+                <activityFinalNodeMoniker Id="9689b4d2-98e4-4ecc-bea7-66fe1c9af38a" LastKnownName="ActivityFinal11" />
+                <elementDefinition Id="5eb4a59d-cd66-451a-98f8-52f04dffa1cc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="e624960a-2fe6-464d-be80-0f73a5957562" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="0dac6681-215b-4989-8495-800f190f0c5d" />
+          </activityFinalNode>
+          <activityFinalNode Id="9689b4d2-98e4-4ecc-bea7-66fe1c9af38a" name="ActivityFinal11" isLeaf="false">
+            <elementDefinition Id="180695af-a667-4336-a80b-e83e2a2b5fcb" />
+          </activityFinalNode>
+          <callBehaviorAction Id="b117bf0c-e3eb-4a85-80b2-d8102fdcd1b8" name="Crear noticia" isLeaf="false">
+            <elementDefinition Id="a3efb79e-9d52-41b2-9aa8-91339ea0cef3" />
+            <flowNodeTargets>
+              <controlFlow Id="89ca7865-9a07-41ad-aa31-31c716db989b" isLeaf="false">
+                <activityFinalNodeMoniker Id="9cc2db85-8a95-460d-a6eb-b4b85e6e6b55" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="e741d6b4-abbe-413b-81b7-dcb47c307e14" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="9cc2db85-8a95-460d-a6eb-b4b85e6e6b55" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="93a5cfd0-79c1-4670-8ed2-813a1ae3270e" />
+          </activityFinalNode>
+          <callBehaviorAction Id="93d9d2c9-1555-4b19-946b-68eece832a84" name="Editar obra" isLeaf="false">
+            <elementDefinition Id="89414b0c-6574-4515-bc74-34bfc4871e6f" />
+            <flowNodeTargets>
+              <controlFlow Id="bee1fef3-67d7-4977-9bcf-cc7d3935a28b" isLeaf="false">
+                <activityFinalNodeMoniker Id="0fc1179e-936a-470d-9a52-2cc5da76637c" LastKnownName="ActivityFinal12" />
+                <elementDefinition Id="70a2544c-4d62-4992-afd5-0a60adc65f7d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="0fc1179e-936a-470d-9a52-2cc5da76637c" name="ActivityFinal12" isLeaf="false">
+            <elementDefinition Id="0f0e4a64-4d5f-4d3c-b907-096bdfe7df8f" />
+          </activityFinalNode>
+          <callBehaviorAction Id="b6850e91-fe59-4afc-a737-58276c879955" name="Editar perfil de actor" isLeaf="false">
+            <elementDefinition Id="0aa2b3be-82b5-45dc-8523-d42f55e9297f" />
+            <flowNodeTargets>
+              <controlFlow Id="0861b074-caa2-4d3e-b887-eae771108666" isLeaf="false">
+                <activityFinalNodeMoniker Id="ea71b8de-b623-42f8-8114-b1e3fe86c416" LastKnownName="ActivityFinal121" />
+                <elementDefinition Id="d62d6e60-1727-4d3c-ab0a-4f1e2414385b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="ea71b8de-b623-42f8-8114-b1e3fe86c416" name="ActivityFinal121" isLeaf="false">
+            <elementDefinition Id="542041e5-587a-439d-8be5-eb9ea9cdb24f" />
+          </activityFinalNode>
+          <callBehaviorAction Id="64e3f55a-7594-49c4-ad82-a8d6a905ba9f" name="Editar información general" isLeaf="false">
+            <elementDefinition Id="d9a06dc7-ffd2-4049-bd31-40ce13316f29" />
+            <flowNodeTargets>
+              <controlFlow Id="86f1c42a-6920-4994-9328-42b48efccfa1" isLeaf="false">
+                <activityFinalNodeMoniker Id="77c4dd9a-dc59-4a55-9fc1-90456073836d" LastKnownName="ActivityFinal122" />
+                <elementDefinition Id="b5dcfeb4-f697-4cf0-9bb5-293013dd9bd9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="77c4dd9a-dc59-4a55-9fc1-90456073836d" name="ActivityFinal122" isLeaf="false">
+            <elementDefinition Id="67dd0f5f-d7ed-4c92-bdef-2d057eef114f" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6e6bc55c-e499-443d-ac3c-e11ce1b333c2" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+  </package>
+</activityRootModel>
