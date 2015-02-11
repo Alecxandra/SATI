@@ -42,20 +42,6 @@
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="c09c5ad1-0996-4ba3-97f1-f297eb862eb5">
-      <profileInstance Id="2fbb61de-10a7-4e2a-a60e-c12af4c5a648" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="101abd04-0fd1-43fe-a00c-acdbdbd21cc2">
-      <profileInstance Id="2493bc1b-2946-411b-a679-4b93a55ededf" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="16faa9cb-c96f-4515-9172-5dd9a29c5197" name="Crear obra" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -116,11 +102,11 @@
           <decisionNode Id="a7713cf2-816e-4b96-9660-bb6c32d3974b" name="Decision1" isLeaf="false">
             <elementDefinition Id="797204f9-9bb3-4dae-be24-032dabfe6c35" />
             <flowNodeTargets>
-              <controlFlow Id="1b8813bf-6dd6-44d3-8fb9-51f970fa1f97" isLeaf="false">
+              <controlFlow Id="1b8813bf-6dd6-44d3-8fb9-51f970fa1f97" guard="Datos válidos" isLeaf="false">
                 <opaqueActionMoniker Id="d03632ce-0800-40cf-a0bf-cde3fe70f190" LastKnownName="Crear instancia" />
                 <elementDefinition Id="18926f33-08f0-4386-b4df-dab2815ecf9c" />
               </controlFlow>
-              <controlFlow Id="9d7e0f37-e50a-455f-9016-8adcee8f9677" isLeaf="false">
+              <controlFlow Id="9d7e0f37-e50a-455f-9016-8adcee8f9677" guard="Datos inválidos" isLeaf="false">
                 <opaqueActionMoniker Id="9f704bb5-0d2c-4d6e-a958-bb206fe116fa" LastKnownName="Desplegar campos inválidos" />
                 <elementDefinition Id="c66b0465-ecf2-4af7-a967-0c7b18a195f8" />
               </controlFlow>
@@ -162,5 +148,19 @@
   </packagedElements>
   <package Id="a92bfaf0-010c-4d0e-9e7d-52c22789b7eb" name="diagrama_actividades_1.0">
     <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c09c5ad1-0996-4ba3-97f1-f297eb862eb5">
+        <profileInstance Id="2fbb61de-10a7-4e2a-a60e-c12af4c5a648" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="101abd04-0fd1-43fe-a00c-acdbdbd21cc2">
+        <profileInstance Id="2493bc1b-2946-411b-a679-4b93a55ededf" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

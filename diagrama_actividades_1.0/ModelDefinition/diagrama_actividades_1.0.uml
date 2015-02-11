@@ -91,6 +91,51 @@
           LastKnownLocation="diagrama_actividades_1.0.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="e3b05400-b38a-4b02-a653-37fc7b7bb51b">
+      <body>1. Pertenece al grupo de teatro ArtMelola
+
+2.Autenticado como administrador
+
+3.Se encuentra situado en la disponibilidad para crear perfil de actor
+</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="a1e8c40c-043f-424a-afb5-e9de3ffa4222"
+          LastKnownName="Initial1"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="75d73da2-1a99-48eb-a985-5bee7c1ca01e">
+      <body>1. Nombre
+2. Numero de identidad
+3. Genero
+4. Correo
+5. Cuenta de Facebook
+6. Briografía
+7. Foto
+8. Obras en las que ha actuado
+
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="fc8d653c-3ed7-41c1-b24c-2e714a1e6929"
+          LastKnownName="Llenar formulario y someter"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7418bd5d-449f-44df-9653-e485ef6d928f">
+      <body>Campos invalidos aparecen en rojo
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="4611a54f-8255-434b-a45d-38be99213c78"
+          LastKnownName="Desplegar campos inválidos"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -1214,6 +1259,7 @@
             <flowNodeTargets>
               <controlFlow
                 Id="18926f33-08f0-4386-b4df-dab2815ecf9c"
+                guard="Datos válidos"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="a790b154-1ab0-4ccf-8908-8bad0a69e838"
@@ -1222,6 +1268,7 @@
               </controlFlow>
               <controlFlow
                 Id="c66b0465-ecf2-4af7-a967-0c7b18a195f8"
+                guard="Datos inválidos"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="81a3443e-e9c1-4672-bf24-5a7eb893874a"
@@ -1277,6 +1324,180 @@
           </opaqueAction>
           <activityFinalNode
             Id="a0802445-16eb-4a10-bf7b-ae302396c611"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="2c318e1b-7667-468c-b1ae-594bf7a73aa7"
+        name="Crear Perfil de Actores"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="b0f8556d-e5bb-4e48-82e7-01871aac4802"
+            name="Sistema"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="46192e5e-fbf3-43e3-8f3f-837ee6fcd670"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="ecbfead0-cf0d-4a94-8523-5dca06c8ce8e"
+            name="Administrador"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="c54ba7b6-f112-4f6f-add2-d41aded3cffb"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="a1e8c40c-043f-424a-afb5-e9de3ffa4222"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8e18ddc7-c579-4a14-b993-a573db850f12"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c573d3c-4494-4ca7-b74e-6f865aab8c12"
+                  LastKnownName="Desplegar formulario para crear perfil de actor"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="fc8d653c-3ed7-41c1-b24c-2e714a1e6929"
+            name="Llenar formulario y someter"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="685d223d-c137-40d8-bad6-09e5cee3416b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5dd4ff5e-e775-4ff0-a792-fd43ef12f418"
+                  LastKnownName="Validar informacion de  formulario"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7c573d3c-4494-4ca7-b74e-6f865aab8c12"
+            name="Desplegar formulario para crear perfil de actor"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5631de40-ea04-46b2-8c54-36f442548acb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fc8d653c-3ed7-41c1-b24c-2e714a1e6929"
+                  LastKnownName="Llenar formulario y someter"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5dd4ff5e-e775-4ff0-a792-fd43ef12f418"
+            name="Validar informacion de  formulario"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ef61f637-31de-4385-b8bf-9c0fb8efaa42"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a095517a-138c-456e-9a4b-15540a4d0832"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a095517a-138c-456e-9a4b-15540a4d0832"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e97bb6ac-dc6b-44ac-bbe7-665c70276ee2"
+                guard="Datos válidos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="02d14006-39d8-4845-abc5-235a0d851a36"
+                  LastKnownName="Crear instancia"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a4d70010-bcfc-402b-9db0-19a447d9167f"
+                guard="Datos Inválidos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4611a54f-8255-434b-a45d-38be99213c78"
+                  LastKnownName="Desplegar campos inválidos"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="02d14006-39d8-4845-abc5-235a0d851a36"
+            name="Crear instancia"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dca3ccd4-ded3-47f0-9f39-7adffc940fa5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e676d083-e429-41ed-8b63-83b1ec5e2ed2"
+                  LastKnownName="Notificar creacion de instancia"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4611a54f-8255-434b-a45d-38be99213c78"
+            name="Desplegar campos inválidos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="52d62d0f-ec19-4865-a9bb-b900f9c990c8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fc8d653c-3ed7-41c1-b24c-2e714a1e6929"
+                  LastKnownName="Llenar formulario y someter"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e676d083-e429-41ed-8b63-83b1ec5e2ed2"
+            name="Notificar creacion de instancia"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="91f5c6e6-8a3d-4a08-a44a-ceacc4286447"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="32536621-8708-41f7-93ab-6f5203acf44c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="32536621-8708-41f7-93ab-6f5203acf44c"
             name="ActivityFinal1"
             isLeaf="false" />
         </nodes>

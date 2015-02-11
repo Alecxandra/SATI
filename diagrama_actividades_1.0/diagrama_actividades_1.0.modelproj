@@ -43,12 +43,19 @@
       <SubType>Content</SubType>
       <DependentUpon>EnvioCorreoMasivos.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="UMLActivityDiagram1.activitydiagram">
+    <Content Include="CrearObra.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLActivityDiagram1.activitydiagram.layout">
+    <Content Include="CrearObra.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
+      <DependentUpon>CrearObra.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CrearActores.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CrearActores.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CrearActores.activitydiagram</DependentUpon>
     </Content>
     <Content Include="VerContenido.activitydiagram">
       <SubType>Content</SubType>
