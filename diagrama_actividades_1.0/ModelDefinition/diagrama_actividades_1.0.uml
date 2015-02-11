@@ -136,6 +136,46 @@
           LastKnownLocation="diagrama_actividades_1.0.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="5bede331-358f-4b0c-af75-b3edb766a186">
+      <body>1.Existe un acontecimiento que publicar
+ 
+2.Autenticado como administrador
+
+3.Se encuentra situado en la disponibilidad para crear noticia
+
+</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="de214506-35b8-437c-85c1-64b439f08d4b"
+          LastKnownName="Initial1"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="4400de4d-5aea-40a6-8c31-27aeb55584ab">
+      <body>1.Titulo de la noticia
+2.Cuerpo de la noticia
+4.Fecha de creación
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="df18471c-d8fd-451f-a51b-b9a091f88aac"
+          LastKnownName="Llenar formulario y someter"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="54299096-1776-4443-b5b7-5462a1c8fea5">
+      <body>Campos invalidos aparecen en rojo
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="35818480-a972-4695-87e1-33bcb5f334dc"
+          LastKnownName="Desplegar campos inválidos"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -1498,6 +1538,180 @@
           </opaqueAction>
           <activityFinalNode
             Id="32536621-8708-41f7-93ab-6f5203acf44c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="db5c56e5-0952-4e9d-af46-2c47e59bfea4"
+        name="Crear noticia"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="bf2c11bb-2f9c-4873-af80-6a21d4d383cf"
+            name="Sistema"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="4cee9771-0a4c-4d4a-968c-b12479365376"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="cb8ed574-306c-4116-bcd8-ec2bc2efbd5f"
+            name="Administrador"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="ee65b6c2-7aa2-41b4-8c92-88ab1e37001b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <initialNode
+            Id="de214506-35b8-437c-85c1-64b439f08d4b"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2c075379-0cf5-4d20-bd38-b0a3052b8db2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f56d3e03-4b92-406c-85dc-71a0b8100557"
+                  LastKnownName="Desplegar formulario para crear noticia"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="df18471c-d8fd-451f-a51b-b9a091f88aac"
+            name="Llenar formulario y someter"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a81d60fb-e98a-4b83-8c23-d9fe7d0c3825"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d8f46509-c437-4d51-bd05-14e304e2cf25"
+                  LastKnownName="Validar informacion de  formulario"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f56d3e03-4b92-406c-85dc-71a0b8100557"
+            name="Desplegar formulario para crear noticia"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d114029-2247-44fd-8e85-c6e55e4462dc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="df18471c-d8fd-451f-a51b-b9a091f88aac"
+                  LastKnownName="Llenar formulario y someter"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d8f46509-c437-4d51-bd05-14e304e2cf25"
+            name="Validar informacion de  formulario"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38960e92-9898-4f5e-95c9-6c72dc27873a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="34562330-0d61-45dd-96f5-221a980ecc9c"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="34562330-0d61-45dd-96f5-221a980ecc9c"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6fb457fb-e55f-40d8-8d41-e3ccf3204b8a"
+                guard="Datos válidos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="85621933-abfb-4e15-ae2f-f534d60c7244"
+                  LastKnownName="Crear instancia"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e3673d87-fbcf-4d05-a790-d08364065d91"
+                guard="Datos inválidos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="35818480-a972-4695-87e1-33bcb5f334dc"
+                  LastKnownName="Desplegar campos inválidos"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="85621933-abfb-4e15-ae2f-f534d60c7244"
+            name="Crear instancia"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="651f84ad-bd87-4566-bb57-7b1198420f6f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b4ef7fca-232f-4e0c-9012-2e46e375b839"
+                  LastKnownName="Notificar creacion de instancia"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="35818480-a972-4695-87e1-33bcb5f334dc"
+            name="Desplegar campos inválidos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e89744d9-5fca-4160-916b-4db3a3c904d5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="df18471c-d8fd-451f-a51b-b9a091f88aac"
+                  LastKnownName="Llenar formulario y someter"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b4ef7fca-232f-4e0c-9012-2e46e375b839"
+            name="Notificar creacion de instancia"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="92834105-ce7d-42cc-bbde-73e498cddc09"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="8a8ca060-e81e-4a18-9210-a4a27911c2d2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="8a8ca060-e81e-4a18-9210-a4a27911c2d2"
             name="ActivityFinal1"
             isLeaf="false" />
         </nodes>

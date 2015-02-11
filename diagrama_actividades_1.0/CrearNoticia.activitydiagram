@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="04da657f-29eb-4abd-a379-afd8ec02fd08" name="Crear noticia" linkedPackageId="b88d834b-a09b-4a0a-b8bc-3b0a64fa9fb9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="5f3109ce-ad69-43ce-b1a7-e904d342426b">
+      <elementDefinition Id="5bede331-358f-4b0c-af75-b3edb766a186" />
+      <body>1.Existe un acontecimiento que publicar
+ 
+2.Autenticado como administrador
+
+3.Se encuentra situado en la disponibilidad para crear noticia
+
+</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="b7b71ba5-c143-46ad-8f46-9a28ea8d7c68" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="223936ec-c14d-4d43-b074-57aa97f63c4b">
+      <elementDefinition Id="4400de4d-5aea-40a6-8c31-27aeb55584ab" />
+      <body>1.Titulo de la noticia
+2.Cuerpo de la noticia
+4.Fecha de creación
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="a8980a20-52a0-4878-a76a-36e14425d42d" LastKnownName="Llenar formulario y someter" />
+      </annotatedElements>
+    </comment>
+    <comment Id="dceab93d-a240-4040-a71b-9a298faa307b">
+      <elementDefinition Id="54299096-1776-4443-b5b7-5462a1c8fea5" />
+      <body>Campos invalidos aparecen en rojo
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="c69e031c-acfc-404c-a9cf-f19c2f67dbf9" LastKnownName="Desplegar campos inválidos" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="0c733e11-aab3-4ccf-960c-3fff2b3d1630">
+      <profileInstance Id="8dcae433-162d-49b1-9061-db92651eaa47" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a5078195-18fb-42fc-94f5-6f5dc7f2cc99">
+      <profileInstance Id="04e4a086-4ff0-4274-b0fb-77fc2de0b50f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="0d25a704-777e-423f-b53b-778c0fd20966" name="Crear noticia" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="db5c56e5-0952-4e9d-af46-2c47e59bfea4" />
+        <nodes>
+          <objectNode Id="3ed3452f-5acc-4adc-a00a-328a8f9722e0" name="Sistema" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="bf2c11bb-2f9c-4873-af80-6a21d4d383cf" />
+            <upperBound>
+              <literalInteger Id="9690a1bb-760f-45d3-b188-606721d70190" name="2147483647" value="2147483647">
+                <elementDefinition Id="4cee9771-0a4c-4d4a-968c-b12479365376" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="9ad92245-2faf-47dd-be1e-66db5ca048ca" name="Administrador" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cb8ed574-306c-4116-bcd8-ec2bc2efbd5f" />
+            <upperBound>
+              <literalInteger Id="866d92fe-49e4-437e-9a95-d803580f8596" name="2147483647" value="2147483647">
+                <elementDefinition Id="ee65b6c2-7aa2-41b4-8c92-88ab1e37001b" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="b7b71ba5-c143-46ad-8f46-9a28ea8d7c68" name="Initial1" isLeaf="false">
+            <elementDefinition Id="de214506-35b8-437c-85c1-64b439f08d4b" />
+            <flowNodeTargets>
+              <controlFlow Id="2332b919-03db-460d-9d52-837210585fcd" isLeaf="false">
+                <opaqueActionMoniker Id="f614ef13-6745-4d12-9adc-4943c010a966" LastKnownName="Desplegar formulario para crear noticia" />
+                <elementDefinition Id="2c075379-0cf5-4d20-bd38-b0a3052b8db2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a8980a20-52a0-4878-a76a-36e14425d42d" name="Llenar formulario y someter" isLeaf="false">
+            <elementDefinition Id="df18471c-d8fd-451f-a51b-b9a091f88aac" />
+            <flowNodeTargets>
+              <controlFlow Id="a0fdd0aa-8827-4b5f-a1aa-88a7f36cb594" isLeaf="false">
+                <opaqueActionMoniker Id="6cbe078c-2c9d-416d-8bf4-d776e5fc05c3" LastKnownName="Validar informacion de  formulario" />
+                <elementDefinition Id="a81d60fb-e98a-4b83-8c23-d9fe7d0c3825" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f614ef13-6745-4d12-9adc-4943c010a966" name="Desplegar formulario para crear noticia" isLeaf="false">
+            <elementDefinition Id="f56d3e03-4b92-406c-85dc-71a0b8100557" />
+            <flowNodeTargets>
+              <controlFlow Id="3deb5f79-fbe8-4c55-a9ac-6f63ab6cc07d" isLeaf="false">
+                <opaqueActionMoniker Id="a8980a20-52a0-4878-a76a-36e14425d42d" LastKnownName="Llenar formulario y someter" />
+                <elementDefinition Id="6d114029-2247-44fd-8e85-c6e55e4462dc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6cbe078c-2c9d-416d-8bf4-d776e5fc05c3" name="Validar informacion de  formulario" isLeaf="false">
+            <elementDefinition Id="d8f46509-c437-4d51-bd05-14e304e2cf25" />
+            <flowNodeTargets>
+              <controlFlow Id="da56db5e-3f3a-4472-a894-906f172c7c48" isLeaf="false">
+                <decisionNodeMoniker Id="42407d1a-2fcd-483d-b3cd-426857eb6d01" LastKnownName="Decision1" />
+                <elementDefinition Id="38960e92-9898-4f5e-95c9-6c72dc27873a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="42407d1a-2fcd-483d-b3cd-426857eb6d01" name="Decision1" isLeaf="false">
+            <elementDefinition Id="34562330-0d61-45dd-96f5-221a980ecc9c" />
+            <flowNodeTargets>
+              <controlFlow Id="cebf9108-70e4-4747-8882-88e472a90da2" guard="Datos válidos" isLeaf="false">
+                <opaqueActionMoniker Id="f8bee366-2fcc-4d48-a155-42c20faa67ef" LastKnownName="Crear instancia" />
+                <elementDefinition Id="6fb457fb-e55f-40d8-8d41-e3ccf3204b8a" />
+              </controlFlow>
+              <controlFlow Id="d49fd869-a325-4964-a4f8-4e72357e2a69" guard="Datos inválidos" isLeaf="false">
+                <opaqueActionMoniker Id="c69e031c-acfc-404c-a9cf-f19c2f67dbf9" LastKnownName="Desplegar campos inválidos" />
+                <elementDefinition Id="e3673d87-fbcf-4d05-a790-d08364065d91" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f8bee366-2fcc-4d48-a155-42c20faa67ef" name="Crear instancia" isLeaf="false">
+            <elementDefinition Id="85621933-abfb-4e15-ae2f-f534d60c7244" />
+            <flowNodeTargets>
+              <controlFlow Id="3b88b8a6-5dbe-49cd-b1a8-e35cc3d8c87c" isLeaf="false">
+                <opaqueActionMoniker Id="785e2cca-0c2b-45de-8191-979389f57da4" LastKnownName="Notificar creacion de instancia" />
+                <elementDefinition Id="651f84ad-bd87-4566-bb57-7b1198420f6f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c69e031c-acfc-404c-a9cf-f19c2f67dbf9" name="Desplegar campos inválidos" isLeaf="false">
+            <elementDefinition Id="35818480-a972-4695-87e1-33bcb5f334dc" />
+            <flowNodeTargets>
+              <controlFlow Id="8704abc1-b5ff-443b-81bd-54c8a0d0da13" isLeaf="false">
+                <opaqueActionMoniker Id="a8980a20-52a0-4878-a76a-36e14425d42d" LastKnownName="Llenar formulario y someter" />
+                <elementDefinition Id="e89744d9-5fca-4160-916b-4db3a3c904d5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="785e2cca-0c2b-45de-8191-979389f57da4" name="Notificar creacion de instancia" isLeaf="false">
+            <elementDefinition Id="b4ef7fca-232f-4e0c-9012-2e46e375b839" />
+            <flowNodeTargets>
+              <controlFlow Id="1f6855ae-4538-481d-b10c-fb5cdbf429e1" isLeaf="false">
+                <activityFinalNodeMoniker Id="9feba527-ed37-431e-874b-c292b8267903" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="92834105-ce7d-42cc-bbde-73e498cddc09" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="9feba527-ed37-431e-874b-c292b8267903" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="8a8ca060-e81e-4a18-9210-a4a27911c2d2" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b88d834b-a09b-4a0a-b8bc-3b0a64fa9fb9" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+  </package>
+</activityRootModel>

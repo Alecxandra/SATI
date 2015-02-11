@@ -57,6 +57,13 @@
       <SubType>Content</SubType>
       <DependentUpon>CrearActores.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="CrearNoticia.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CrearNoticia.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CrearNoticia.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="VerContenido.activitydiagram">
       <SubType>Content</SubType>
     </Content>
