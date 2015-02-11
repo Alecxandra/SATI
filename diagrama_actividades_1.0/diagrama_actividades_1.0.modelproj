@@ -1,83 +1,3 @@
-<<<<<<< HEAD
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{03074e26-a439-4854-9313-b3e49e5489da}</ProjectGuid>
-    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>diagrama_actividades_1.0</Name>
-    <RootNamespace>diagrama_actividades_1.0</RootNamespace>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>bin\Release\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
-  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
-  <ItemGroup>
-    <Content Include="EditarObra.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="EditarObra.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>EditarObra.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="ProcesoGeneral.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="ProcesoGeneral.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>ProcesoGeneral.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="CrearEditarContenido.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="CrearEditarContenido.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>CrearEditarContenido.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="EnvioCorreoMasivos.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="EnvioCorreoMasivos.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>EnvioCorreoMasivos.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="VerContenido.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="VerContenido.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>VerContenido.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="ConsultarReservar.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="ConsultarReservar.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>ConsultarReservar.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="EntregarTickets.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="EntregarTickets.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>EntregarTickets.activitydiagram</DependentUpon>
-    </Content>
-    <Folder Include="ModelDefinition\" />
-    <Content Include="ModelDefinition\diagrama_actividades_1.0.uml">
-      <SubType>Content</SubType>
-    </Content>
-  </ItemGroup>
-=======
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -163,5 +83,4 @@
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
->>>>>>> FETCH_HEAD
 </Project>
