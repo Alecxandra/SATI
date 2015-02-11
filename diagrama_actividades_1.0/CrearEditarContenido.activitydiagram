@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="871e9504-c904-4994-a509-df7ce4f5ac27" name="Crear y Editar contenido" linkedPackageId="6e6bc55c-e499-443d-ac3c-e11ce1b333c2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="38beca02-540b-47b0-93f4-2dff570b72ef">
-      <profileInstance Id="39edf65f-2b6a-4386-9e6d-055f79f2a987" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="efbf5fbb-69d0-48a3-9c08-bf6b62658f0d">
-      <profileInstance Id="40f72cd3-ab29-4cd2-a2f8-10bfb73c40a2" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="a1251044-db1e-4e38-81fb-e2e1e0f677f8" name="Crear y Editar contenido" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -161,5 +147,19 @@
   </packagedElements>
   <package Id="6e6bc55c-e499-443d-ac3c-e11ce1b333c2" name="diagrama_actividades_1.0">
     <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="38beca02-540b-47b0-93f4-2dff570b72ef">
+        <profileInstance Id="39edf65f-2b6a-4386-9e6d-055f79f2a987" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="efbf5fbb-69d0-48a3-9c08-bf6b62658f0d">
+        <profileInstance Id="40f72cd3-ab29-4cd2-a2f8-10bfb73c40a2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
