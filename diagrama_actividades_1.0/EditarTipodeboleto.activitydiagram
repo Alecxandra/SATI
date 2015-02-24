@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8ccf3f29-7c8e-434c-8a69-e6295e30d457" name="Editar tipo de  boletos" linkedPackageId="9743cf98-3968-4041-a21a-aae5f40eea3d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="c144c043-8d51-4f1b-bac7-e16211d4015a">
+      <elementDefinition Id="756b65c0-b7c5-40d7-8430-da76bd8507f5" />
+      <body>
+
+1. Nombre
+2. precio
+3. comentario </body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="ace14576-cd7a-4e46-b6c5-d3e4cf1b77b7" LastKnownName="Llenar formulario y someter" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b1643c61-93b2-437c-a7d8-94711568d744">
+      <elementDefinition Id="c290a298-56c8-4897-a0d8-3c2042b09f61" />
+      <body>Campos invalidos aparecen en rojo
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="4174118e-3caa-4081-8dd4-043d3c6592dc" LastKnownName="Desplegar campos inválidos" />
+      </annotatedElements>
+    </comment>
+    <comment Id="2e07fc27-41e7-40d9-a341-1cfa1a1f5d78">
+      <elementDefinition Id="d7ea72c1-0e6b-4eb6-a971-d08adc880a89" />
+      <body>1. Autenticado como administrador.
+
+2.Se encuentra situado en la facilidad para editar tipos de boletos.</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="5407c12d-70c5-4609-9929-46a71576fb2b" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="3840000c-1245-42ce-839c-9f3d75fb5609">
+      <profileInstance Id="d2dd381e-66b1-4ebc-86d5-c1b4fb541a37" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b2a16a9b-4d8e-4c35-aea8-4f832463510f">
+      <profileInstance Id="d7d9d5d5-df1d-4806-b79a-e8c063c51d7e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="fd0612a4-5172-461a-90c7-8b2fcd0b12c1" name="Editar tipo de  boletos" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="e8a93377-12c0-486d-8408-dabe2281eb7b" />
+        <nodes>
+          <objectNode Id="966e2dce-fa2b-4011-928f-1a5fed815b4c" name="Sistema" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="b921fb72-c14d-45cb-8c21-3dbbb144ec39" />
+            <upperBound>
+              <literalInteger Id="0ab61979-7eac-43cc-84a5-984dad4aa870" name="2147483647" value="2147483647">
+                <elementDefinition Id="e4f8c7c4-f9ee-448a-81b0-870c73a432bc" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="2a5be5ad-1962-404e-a23d-a7f32d553545" name="Administrador" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="bf3740d2-02f1-4628-b270-882bf44bd8e2" />
+            <upperBound>
+              <literalInteger Id="21d56a35-6ab8-4735-b722-cd7312eb50e5" name="2147483647" value="2147483647">
+                <elementDefinition Id="ecdca252-1d3c-4637-87d3-b8756ee1ea51" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="5407c12d-70c5-4609-9929-46a71576fb2b" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ae31217a-0e18-4b59-ae8a-b2c50576b6aa" />
+            <flowNodeTargets>
+              <controlFlow Id="4576e8ea-31e6-4691-b075-a624ac4ee1cc" isLeaf="false">
+                <opaqueActionMoniker Id="4eacb441-6d30-4256-9622-543175b419dd" LastKnownName="Desplegar formulario para editar tipo de boleto" />
+                <elementDefinition Id="7b0337ca-f1df-4ed0-a105-551b9f731d93" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ace14576-cd7a-4e46-b6c5-d3e4cf1b77b7" name="Llenar formulario y someter" isLeaf="false">
+            <elementDefinition Id="080f03d2-98b2-46a4-9235-4e9695beffe3" />
+            <flowNodeTargets>
+              <controlFlow Id="0c042c41-8987-40fb-81c8-de4f109b7a01" isLeaf="false">
+                <opaqueActionMoniker Id="e3200449-4eb1-4878-8669-1df860394e0b" LastKnownName="Validar informacion de  formulario" />
+                <elementDefinition Id="2b16e066-332a-4a00-8b14-0f0cb4addca4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4eacb441-6d30-4256-9622-543175b419dd" name="Desplegar formulario para editar tipo de boleto" isLeaf="false">
+            <elementDefinition Id="120f1f8d-2747-49c5-bea4-33ae6bf5603a" />
+            <flowNodeTargets>
+              <controlFlow Id="72da5cee-1f9b-4648-a67f-2f32596f873b" isLeaf="false">
+                <opaqueActionMoniker Id="ace14576-cd7a-4e46-b6c5-d3e4cf1b77b7" LastKnownName="Llenar formulario y someter" />
+                <elementDefinition Id="6381f529-c6a1-4790-8e07-9104698ad137" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e3200449-4eb1-4878-8669-1df860394e0b" name="Validar informacion de  formulario" isLeaf="false">
+            <elementDefinition Id="0c196f51-7d97-4fa9-b888-5b5df79b7f0d" />
+            <flowNodeTargets>
+              <controlFlow Id="8a478ee6-fa39-418c-8214-cdef9f37081c" isLeaf="false">
+                <decisionNodeMoniker Id="eb756999-087a-4d6c-bd85-4f7e1f11533f" LastKnownName="Decision1" />
+                <elementDefinition Id="d69508b0-98eb-49bf-b4c7-1dcf08aee6c8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="eb756999-087a-4d6c-bd85-4f7e1f11533f" name="Decision1" isLeaf="false">
+            <elementDefinition Id="66cff5b8-82a3-4afa-9ad1-a65deb4012d6" />
+            <flowNodeTargets>
+              <controlFlow Id="a82d63e6-ad67-4e3c-8669-30c9872d8b08" guard="Datos válidos" isLeaf="false">
+                <opaqueActionMoniker Id="0409fbdc-0ac5-4ada-9f80-c87bd0fac42c" LastKnownName="Modificar instancia" />
+                <elementDefinition Id="2e7584c1-b018-486c-a5e2-4ef76c7fdd45" />
+              </controlFlow>
+              <controlFlow Id="d3f39d95-b86a-4dce-baf6-583c27574149" guard="Datos Inválidos" isLeaf="false">
+                <opaqueActionMoniker Id="4174118e-3caa-4081-8dd4-043d3c6592dc" LastKnownName="Desplegar campos inválidos" />
+                <elementDefinition Id="2c9cf09a-2ec1-4c6b-bbd1-67156b5e3899" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="0409fbdc-0ac5-4ada-9f80-c87bd0fac42c" name="Modificar instancia" isLeaf="false">
+            <elementDefinition Id="de811425-0551-4333-a4f3-9a912c50bec1" />
+            <flowNodeTargets>
+              <controlFlow Id="555e2e2c-def9-4e61-a51b-251f0acf17e5" isLeaf="false">
+                <opaqueActionMoniker Id="bf10aa23-5400-47f5-aac6-a50adbbc06c1" LastKnownName="Notificar modificacion  de instancia" />
+                <elementDefinition Id="a1778a91-a76f-4cb0-92d8-1aa01307a931" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4174118e-3caa-4081-8dd4-043d3c6592dc" name="Desplegar campos inválidos" isLeaf="false">
+            <elementDefinition Id="88a979a7-52d2-4e20-824e-4fd921c268e8" />
+            <flowNodeTargets>
+              <controlFlow Id="682ba7b5-f2c7-4b37-b46f-5874cd414533" isLeaf="false">
+                <opaqueActionMoniker Id="ace14576-cd7a-4e46-b6c5-d3e4cf1b77b7" LastKnownName="Llenar formulario y someter" />
+                <elementDefinition Id="563e5946-1998-4cd9-819f-9364fb9a1997" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bf10aa23-5400-47f5-aac6-a50adbbc06c1" name="Notificar modificacion  de instancia" isLeaf="false">
+            <elementDefinition Id="9ae78508-adfc-4779-8e58-e8cd33d7c936" />
+            <flowNodeTargets>
+              <controlFlow Id="23d6afcc-0761-4f4d-9ac5-45fbbef5ab31" isLeaf="false">
+                <activityFinalNodeMoniker Id="dacad25c-eef3-4acb-b769-c6f3e99998da" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="82e34396-5a6e-4d59-bab7-bca3aa615b63" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="dacad25c-eef3-4acb-b769-c6f3e99998da" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="7052dc3f-252f-45b8-89f6-d3a265259fe0" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9743cf98-3968-4041-a21a-aae5f40eea3d" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+  </package>
+</activityRootModel>

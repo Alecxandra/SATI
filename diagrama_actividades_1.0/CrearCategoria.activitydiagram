@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a0e5ac6f-95c8-43e6-805e-360bb2d5ab2c" name="Crear categoria" linkedPackageId="f051c0cf-b4af-432c-9178-7791d222c65a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="aa01d813-7c11-46ec-945e-47b646d0fb51">
+      <elementDefinition Id="f9262faf-f2be-4cb7-8340-d12e8313cafb" />
+      <body>
+
+1. Nombre
+2. rango de edad
+3. comentario </body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="78b76de4-f250-42a4-935d-77a80cfa95ca" LastKnownName="Llenar formulario y someter" />
+      </annotatedElements>
+    </comment>
+    <comment Id="2cc1cf0e-c2bb-49d4-8b84-c5a056d75e86">
+      <elementDefinition Id="cdf889ee-d809-47a3-9c8e-4b6b9c6c195c" />
+      <body>Campos invalidos aparecen en rojo
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="1d120fd4-4c26-4b97-a66b-50e1bc873877" LastKnownName="Desplegar campos inválidos" />
+      </annotatedElements>
+    </comment>
+    <comment Id="83112834-57e3-4777-ac32-f6fe01ceda1b">
+      <elementDefinition Id="50ba537f-43d0-4e59-8258-91cc6a194650" />
+      <body>1. Autenticado como administrador.
+
+2.Se encuentra situado en la facilidad para crear categoria.</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="7c3cbd0f-7818-4129-945b-c7de9047c27c" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c26c6f10-5aa2-4fa3-9c70-0e532112bbaa">
+      <profileInstance Id="38a837ec-c745-4b05-b628-fb09b2afa4a2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="31145799-9259-4fb4-a484-e3f4f6e939c8">
+      <profileInstance Id="4aede976-e8f8-4191-99bd-1895de81b99b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="30aa2565-370c-4109-adf1-5c1729315efc" name="Crear categoria" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="66cc9f06-43c5-44e3-9a8d-b588c911b50d" />
+        <nodes>
+          <objectNode Id="a5c0062a-a829-4230-aa18-30d073bf01db" name="Sistema" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="771ca556-0564-48a7-a912-20a338c58b30" />
+            <upperBound>
+              <literalInteger Id="b7a8ec54-3a24-49f4-969f-fc8076c41777" name="2147483647" value="2147483647">
+                <elementDefinition Id="af112256-0232-4a27-9d6a-b98bc94426b2" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="d0bf7395-98c7-408f-bf39-98f8ebf3e5ad" name="Administrador" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="0a26765a-579f-46c7-8b96-726b73f3099b" />
+            <upperBound>
+              <literalInteger Id="94307011-66b5-4401-807a-50555871e00c" name="2147483647" value="2147483647">
+                <elementDefinition Id="d797ef17-6cf5-457c-bf57-774f24d8b98f" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <initialNode Id="7c3cbd0f-7818-4129-945b-c7de9047c27c" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0359484f-fdc2-445c-8fc1-55eab8598c98" />
+            <flowNodeTargets>
+              <controlFlow Id="9c6422c9-c173-4813-b7f8-f378f8aea987" isLeaf="false">
+                <opaqueActionMoniker Id="7f0021c4-53f6-45be-ade0-af4a886a0d64" LastKnownName="Desplegar formulario para crear categoria" />
+                <elementDefinition Id="65e3949e-3d20-4310-98c3-6d78cd49cb06" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="78b76de4-f250-42a4-935d-77a80cfa95ca" name="Llenar formulario y someter" isLeaf="false">
+            <elementDefinition Id="a7ae8b3c-037a-41a7-a293-927ed0269e43" />
+            <flowNodeTargets>
+              <controlFlow Id="d6aa6238-7173-4895-ac5e-734b7e1f0b74" isLeaf="false">
+                <opaqueActionMoniker Id="02546b2f-725e-4713-8024-f9f983eb613f" LastKnownName="Validar informacion de  formulario" />
+                <elementDefinition Id="ac848acf-188d-4692-bdae-949cf4101e09" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7f0021c4-53f6-45be-ade0-af4a886a0d64" name="Desplegar formulario para crear categoria" isLeaf="false">
+            <elementDefinition Id="98b594fb-1834-4653-a2b1-23b7aca7a1c0" />
+            <flowNodeTargets>
+              <controlFlow Id="6ddb6260-38c7-442a-873c-ac63048ea375" isLeaf="false">
+                <opaqueActionMoniker Id="78b76de4-f250-42a4-935d-77a80cfa95ca" LastKnownName="Llenar formulario y someter" />
+                <elementDefinition Id="49f00d6a-ee05-40ef-9f7d-12cc3f87fd11" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="02546b2f-725e-4713-8024-f9f983eb613f" name="Validar informacion de  formulario" isLeaf="false">
+            <elementDefinition Id="39da8267-454a-40c0-b183-dc5dae5e09e5" />
+            <flowNodeTargets>
+              <controlFlow Id="7299bc6f-0912-4b13-9437-75b498f46dfc" isLeaf="false">
+                <decisionNodeMoniker Id="cf102413-cda4-4592-8e59-48efa263d26a" LastKnownName="Decision1" />
+                <elementDefinition Id="3fafe794-2dc8-4114-a1cb-ac0ac1804429" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="cf102413-cda4-4592-8e59-48efa263d26a" name="Decision1" isLeaf="false">
+            <elementDefinition Id="fe38cd1d-4463-45ab-8dd9-a47eb734bf7c" />
+            <flowNodeTargets>
+              <controlFlow Id="2019d1cd-f43f-4a5e-b46c-acf59eaf7d86" guard="Datos válidos" isLeaf="false">
+                <opaqueActionMoniker Id="365d8ea9-b743-4247-98e8-ae74effc77b6" LastKnownName="Crear instancia" />
+                <elementDefinition Id="6b85cdaa-695f-4454-b4d2-e768c4324404" />
+              </controlFlow>
+              <controlFlow Id="7884de02-e16e-4a59-a0fe-2e9d52777d03" guard="Datos Inválidos" isLeaf="false">
+                <opaqueActionMoniker Id="1d120fd4-4c26-4b97-a66b-50e1bc873877" LastKnownName="Desplegar campos inválidos" />
+                <elementDefinition Id="08d3dc6e-bd1f-4475-b72a-ae70db6846f3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="365d8ea9-b743-4247-98e8-ae74effc77b6" name="Crear instancia" isLeaf="false">
+            <elementDefinition Id="b9d4d1d6-47ae-40b1-987a-d8ca2835d294" />
+            <flowNodeTargets>
+              <controlFlow Id="f8bbe66b-0aa8-4a67-bb8b-82db2048a7db" isLeaf="false">
+                <opaqueActionMoniker Id="ba398a01-3aed-4e8b-abe7-cb9de88bd0c8" LastKnownName="Notificar creacion de instancia" />
+                <elementDefinition Id="865d0104-42fc-469a-ae33-9e5ba46ffd50" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1d120fd4-4c26-4b97-a66b-50e1bc873877" name="Desplegar campos inválidos" isLeaf="false">
+            <elementDefinition Id="eed3c25a-28af-464e-b90c-6e62893e26c0" />
+            <flowNodeTargets>
+              <controlFlow Id="8590059b-7538-45bc-8cd4-ca7254e7c92c" isLeaf="false">
+                <opaqueActionMoniker Id="78b76de4-f250-42a4-935d-77a80cfa95ca" LastKnownName="Llenar formulario y someter" />
+                <elementDefinition Id="7752a766-89d6-4d17-974f-7d52ff793398" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ba398a01-3aed-4e8b-abe7-cb9de88bd0c8" name="Notificar creacion de instancia" isLeaf="false">
+            <elementDefinition Id="d15e56f4-2362-4d2f-8bca-f23c051ae8cc" />
+            <flowNodeTargets>
+              <controlFlow Id="76962fa1-08bd-4d4e-b1e2-7d7e99e73e81" isLeaf="false">
+                <activityFinalNodeMoniker Id="50254134-d0dc-420f-9003-dcec3a30f0da" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="927f4b65-6c36-4094-af41-1ef02d459d91" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="50254134-d0dc-420f-9003-dcec3a30f0da" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="1e5fde0a-051f-4133-8887-b60b9162ec07" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="f051c0cf-b4af-432c-9178-7791d222c65a" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+  </package>
+</activityRootModel>

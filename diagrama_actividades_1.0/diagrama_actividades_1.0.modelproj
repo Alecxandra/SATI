@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="CrearObraCasosUso.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CrearObraCasosUso.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CrearObraCasosUso.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="ProcesoGeneral.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -63,6 +70,48 @@
     <Content Include="CrearNoticia.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>CrearNoticia.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CrearGenero.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CrearGenero.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CrearGenero.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="EditarGenero.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EditarGenero.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EditarGenero.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CrearCategoria.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CrearCategoria.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CrearCategoria.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="EditarCategoria.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EditarCategoria.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EditarCategoria.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CrearTipoBoleto.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CrearTipoBoleto.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CrearTipoBoleto.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="EditarTipodeboleto.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EditarTipodeboleto.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EditarTipodeboleto.activitydiagram</DependentUpon>
     </Content>
     <Content Include="VerContenido.activitydiagram">
       <SubType>Content</SubType>
