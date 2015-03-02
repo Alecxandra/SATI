@@ -28,21 +28,11 @@
         <initialNodeMoniker Id="c2772864-035e-49c6-afdb-3b793458aca2" LastKnownName="Initial1" />
       </annotatedElements>
     </comment>
+    <comment Id="5b7cc758-f7fd-4f6e-b3ea-0fcfcd2bd959">
+      <elementDefinition Id="d41f88f2-3917-420e-b5bd-7716c1da6637" />
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B7.</body>
+    </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="5f712845-5622-42e0-a913-21c04ec5dd75">
-      <profileInstance Id="d3ade463-6a84-4be6-95bb-cc2ec3f8a7fa" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="1463bf41-d02e-4060-8776-bb27fadede87">
-      <profileInstance Id="5d676afe-6f20-4a0c-938f-7d22599b7225" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="8c2c1c36-10ed-4ef7-9c09-de2ce8556104" name="Editar genero" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -149,5 +139,19 @@
   </packagedElements>
   <package Id="8cef665f-581d-4798-a689-44950f78bb9b" name="diagrama_actividades_1.0">
     <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5f712845-5622-42e0-a913-21c04ec5dd75">
+        <profileInstance Id="d3ade463-6a84-4be6-95bb-cc2ec3f8a7fa" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1463bf41-d02e-4060-8776-bb27fadede87">
+        <profileInstance Id="5d676afe-6f20-4a0c-938f-7d22599b7225" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

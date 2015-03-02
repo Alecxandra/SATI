@@ -12,6 +12,10 @@
         <initialNodeMoniker Id="6c0e7e99-70ac-441a-86a4-1519d0f3f768" LastKnownName="Initial1" />
       </annotatedElements>
     </comment>
+    <comment Id="8bf72cd4-8cf1-4b6c-b730-546ba88a7317">
+      <elementDefinition Id="671285b4-c91b-46e4-97e3-c1b1ee7db592" />
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B3.</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <activityRootModelHasActivity>

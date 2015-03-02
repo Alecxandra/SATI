@@ -41,6 +41,10 @@
         <opaqueActionMoniker Id="9f704bb5-0d2c-4d6e-a958-bb206fe116fa" LastKnownName="Desplegar campos inválidos" />
       </annotatedElements>
     </comment>
+    <comment Id="7b262cfa-095a-4900-a271-81a70dee4d18">
+      <elementDefinition Id="0c8bd2ae-3919-44f7-be40-4ad9b4a24d4c" />
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B1.</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <activityRootModelHasActivity>

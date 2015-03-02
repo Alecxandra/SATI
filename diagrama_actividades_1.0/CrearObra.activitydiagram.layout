@@ -41,7 +41,7 @@
         <actionShapeMoniker Id="274b88b1-25de-4dc2-bfb7-fa510e395718" />
       </nodes>
     </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(5.375 : 2.53125); (4.05208583333333 : 2.53125 : JumpStart); (3.88541916666667 : 2.53125 : JumpEnd); (3.625 : 2.53125); (3.625 : 2.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <controlFlowConnector edgePoints="[(5.375 : 2.53125); (3.625 : 2.53125); (3.625 : 2.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="78d46731-94dd-40c9-b6a5-f0535ba537ac" />
       <relativeChildShapes />
       <nodes>
@@ -49,7 +49,7 @@
         <actionShapeMoniker Id="941bc38d-b2fa-436a-bc5c-8610b2a19f8d" />
       </nodes>
     </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(3.9687525 : 2.25); (3.9687525 : 3.25); (5.375 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <controlFlowConnector edgePoints="[(3.9687525 : 2.25); (3.9687525 : 3.25); (5.375 : 3.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="5f755cf6-41b8-4f5b-9f64-03f36e18d784" />
       <relativeChildShapes />
       <nodes>
@@ -81,7 +81,7 @@
         <actionShapeMoniker Id="082ef971-7faa-423b-b1ce-3cd80044c595" />
       </nodes>
     </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(7.71875 : 3); (7.71875 : 1.84375); (4.25 : 1.84375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <controlFlowConnector edgePoints="[(7.71875 : 3); (7.71875 : 1.84375); (6.20833333333333 : 1.84375 : JumpStart); (6.04166666666667 : 1.84375 : JumpEnd); (4.25 : 1.84375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="c9b1b320-7d3f-4bac-8bc8-d3080fb15be4" />
       <relativeChildShapes />
       <nodes>
@@ -144,5 +144,9 @@
         <actionShapeMoniker Id="082ef971-7faa-423b-b1ce-3cd80044c595" />
       </nodes>
     </commentConnector>
+    <commentShape Id="e0a3e610-4f10-44de-9606-a826f6e26468" absoluteBounds="0.5, 3.875, 1.75, 1.125" customColor="251, 247, 200">
+      <commentMoniker Id="7b262cfa-095a-4900-a271-81a70dee4d18" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </activityDiagram>

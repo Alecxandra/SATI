@@ -24,7 +24,7 @@
     <callBehaviorActionShape Id="ad222752-c371-47d4-8e0b-ae990a15609f" absoluteBounds="3.5, 2, 1.875, 0.5" customColor="161, 199, 231">
       <callBehaviorActionMoniker Id="4b61fc1b-bfa5-4186-9a19-b1d13ae07439" LastKnownName="Comprobar validez de token" />
     </callBehaviorActionShape>
-    <controlFlowConnector edgePoints="[(4.375 : 1.75); (4.375 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <controlFlowConnector edgePoints="[(4.375 : 1.75); (4.375 : 2)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="14435673-d53f-483d-a662-9f38affba355" />
       <relativeChildShapes />
       <nodes>
@@ -36,7 +36,7 @@
       <decisionNodeMoniker Id="e248ce47-471f-4528-a0bc-8fa6ac166581" LastKnownName="Decision1" />
       <relativeChildShapes />
     </decisionNodeShape>
-    <controlFlowConnector edgePoints="[(4.4375 : 2.5); (4.4375 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <controlFlowConnector edgePoints="[(4.4375 : 2.5); (4.4375 : 2.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="c0ff0ce5-b41e-4d15-ad2d-3429b0327160" />
       <relativeChildShapes />
       <nodes>
@@ -50,7 +50,7 @@
     <callBehaviorActionShape Id="54328cdc-62e8-495c-8170-165953480f30" absoluteBounds="5.125, 4.375, 1.125, 0.5" customColor="161, 199, 231">
       <callBehaviorActionMoniker Id="4b35276b-71fd-4f5e-9bbf-7ad8ccaf42c3" LastKnownName="Entregar ticket" />
     </callBehaviorActionShape>
-    <controlFlowConnector edgePoints="[(4.25 : 3.0625); (3.24493243243243 : 3.0625); (3.24493243243243 : 3.375)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
+    <controlFlowConnector edgePoints="[(4.4375 : 3.25); (4.4375 : 3.625); (3.875 : 3.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <controlFlowMoniker Id="e172f865-1353-4477-94ad-5a2c60354237" />
       <relativeChildShapes />
       <nodes>
@@ -61,7 +61,7 @@
     <callBehaviorActionShape Id="a39e8fd4-3dc3-4163-9d59-74ec49a72af2" absoluteBounds="4.875, 3.625, 1.625, 0.5" customColor="161, 199, 231">
       <callBehaviorActionMoniker Id="d6fd54c8-d87b-4091-9058-bb7acc254c45" LastKnownName="Marcar token como entregado" />
     </callBehaviorActionShape>
-    <controlFlowConnector edgePoints="[(4.625 : 3.0625); (5.67398648648649 : 3.0625); (5.67398648648649 : 3.625)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
+    <controlFlowConnector edgePoints="[(4.625 : 3.0625); (5.67398648648649 : 3.0625); (5.67398648648649 : 3.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="fe3820d9-6a25-40ce-a827-32839b2c0a2a" />
       <relativeChildShapes />
       <nodes>
@@ -69,7 +69,7 @@
         <callBehaviorActionShapeMoniker Id="a39e8fd4-3dc3-4163-9d59-74ec49a72af2" />
       </nodes>
     </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(5.6875 : 4.125); (5.6875 : 4.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <controlFlowConnector edgePoints="[(5.6875 : 4.125); (5.6875 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="3a967bc5-dacc-40d6-9c8a-33c1ff76313d" />
       <relativeChildShapes />
       <nodes>
@@ -91,7 +91,7 @@
         <activityFinalNodeShapeMoniker Id="61c86b37-c051-42d7-8fff-37f421f0a684" />
       </nodes>
     </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(5.75 : 4.875); (5.75 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <controlFlowConnector edgePoints="[(5.75 : 4.875); (5.75 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <controlFlowMoniker Id="6f420dda-442b-4481-acb1-16b5e19b634c" />
       <relativeChildShapes />
       <nodes>
@@ -99,5 +99,9 @@
         <activityFinalNodeShapeMoniker Id="62104c8e-3c7a-424a-9728-6345252c8aac" />
       </nodes>
     </controlFlowConnector>
+    <commentShape Id="8bbb5a88-42f2-4e63-ae43-826c8a1f6a5a" absoluteBounds="0.5, 2.125, 1.25, 1.125" customColor="251, 247, 200">
+      <commentMoniker Id="f0c7ba93-3a73-4f5e-b5e0-b9780a39bb6a" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </activityDiagram>

@@ -32,21 +32,11 @@
         <opaqueActionMoniker Id="c69e031c-acfc-404c-a9cf-f19c2f67dbf9" LastKnownName="Desplegar campos inválidos" />
       </annotatedElements>
     </comment>
+    <comment Id="cca2b4bc-7c25-475d-8798-f38e75212f81">
+      <elementDefinition Id="98546b5b-97ba-428f-b662-ee37424afbb8" />
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B4.</body>
+    </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="0c733e11-aab3-4ccf-960c-3fff2b3d1630">
-      <profileInstance Id="8dcae433-162d-49b1-9061-db92651eaa47" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a5078195-18fb-42fc-94f5-6f5dc7f2cc99">
-      <profileInstance Id="04e4a086-4ff0-4274-b0fb-77fc2de0b50f" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="0d25a704-777e-423f-b53b-778c0fd20966" name="Crear noticia" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -153,5 +143,19 @@
   </packagedElements>
   <package Id="b88d834b-a09b-4a0a-b8bc-3b0a64fa9fb9" name="diagrama_actividades_1.0">
     <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0c733e11-aab3-4ccf-960c-3fff2b3d1630">
+        <profileInstance Id="8dcae433-162d-49b1-9061-db92651eaa47" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a5078195-18fb-42fc-94f5-6f5dc7f2cc99">
+        <profileInstance Id="04e4a086-4ff0-4274-b0fb-77fc2de0b50f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

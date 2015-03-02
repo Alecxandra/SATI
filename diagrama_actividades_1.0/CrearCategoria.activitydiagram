@@ -29,21 +29,11 @@
         <initialNodeMoniker Id="7c3cbd0f-7818-4129-945b-c7de9047c27c" LastKnownName="Initial1" />
       </annotatedElements>
     </comment>
+    <comment Id="7ddf43ff-8143-4754-b5be-085e7f5af4fd">
+      <elementDefinition Id="6a8f9aac-661a-4e84-9fef-44adecd060f0" />
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B6.</body>
+    </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="c26c6f10-5aa2-4fa3-9c70-0e532112bbaa">
-      <profileInstance Id="38a837ec-c745-4b05-b628-fb09b2afa4a2" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="31145799-9259-4fb4-a484-e3f4f6e939c8">
-      <profileInstance Id="4aede976-e8f8-4191-99bd-1895de81b99b" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="30aa2565-370c-4109-adf1-5c1729315efc" name="Crear categoria" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -150,5 +140,19 @@
   </packagedElements>
   <package Id="f051c0cf-b4af-432c-9178-7791d222c65a" name="diagrama_actividades_1.0">
     <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c26c6f10-5aa2-4fa3-9c70-0e532112bbaa">
+        <profileInstance Id="38a837ec-c745-4b05-b628-fb09b2afa4a2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="31145799-9259-4fb4-a484-e3f4f6e939c8">
+        <profileInstance Id="4aede976-e8f8-4191-99bd-1895de81b99b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

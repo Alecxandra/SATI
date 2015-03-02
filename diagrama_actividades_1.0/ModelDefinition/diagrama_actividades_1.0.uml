@@ -396,6 +396,78 @@
           LastKnownLocation="diagrama_actividades_1.0.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="292899e9-fb2d-4bbe-b718-762931ae960c">
+      <body>1. Pertenece al grupo de teatro ArtMelola
+
+2.Autenticado como administrador
+
+3.Se encuentra situado en la disponibilidad para crear perfil de actor
+</body>
+    </comment>
+    <comment
+      Id="ba2b487d-2248-424c-b702-fbfa0af93c5c">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B2.</body>
+    </comment>
+    <comment
+      Id="6a8f9aac-661a-4e84-9fef-44adecd060f0">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B6.</body>
+    </comment>
+    <comment
+      Id="11e84979-e54b-432e-9101-1344735cfac2">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B7.</body>
+    </comment>
+    <comment
+      Id="98546b5b-97ba-428f-b662-ee37424afbb8">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B4.</body>
+    </comment>
+    <comment
+      Id="0c8bd2ae-3919-44f7-be40-4ad9b4a24d4c">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B1.</body>
+    </comment>
+    <comment
+      Id="940eda55-5ed1-4e4c-a473-394240c00aee">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B9.</body>
+    </comment>
+    <comment
+      Id="bb6a0ed1-fc1c-484c-a583-72ac4542b4f5">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B6.</body>
+    </comment>
+    <comment
+      Id="d41f88f2-3917-420e-b5bd-7716c1da6637">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B7.</body>
+    </comment>
+    <comment
+      Id="01c625ea-8bfa-4b69-be3c-d5f47ac5a0ff">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B9.</body>
+    </comment>
+    <comment
+      Id="8b566d2b-16db-418b-9608-cddd409c43eb">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso D1.</body>
+    </comment>
+    <comment
+      Id="671285b4-c91b-46e4-97e3-c1b1ee7db592">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso B3.</body>
+    </comment>
+    <comment
+      Id="88a4658d-076f-4671-b09c-14ea7c7e8225">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso C1 y C2.</body>
+    </comment>
+    <comment
+      Id="8169e0a4-8c68-4fa3-ac76-dc55a4867b01">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso C4 y C5.</body>
+    </comment>
+    <comment
+      Id="a4158d23-95e5-43d7-a7ca-3d259c03d297">
+      <body>1. Usuario está registrado y autenticado.
+</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="393e2a7d-d9ab-4b3d-ad47-7f846ef8e8d8"
+          LastKnownName="Initial1"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
