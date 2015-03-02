@@ -468,6 +468,20 @@
           LastKnownLocation="diagrama_actividades_1.0.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="35a5074a-56e9-4e38-a9a9-35d03d4f193c">
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso C3.</body>
+    </comment>
+    <comment
+      Id="f43e9108-ed91-4771-9e30-66f04cda7339">
+      <body>1. Usuario está autenticado en el sistema.</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="e8fdd944-2b32-41ce-a7c4-8b8d98cae1df"
+          LastKnownName="Initial1"
+          LastKnownLocation="diagrama_actividades_1.0.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -3119,6 +3133,97 @@
             Id="7052dc3f-252f-45b8-89f6-d3a265259fe0"
             name="ActivityFinal1"
             isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="a99560c2-6176-4f6d-beea-514b7b84fc7f"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e8fdd944-2b32-41ce-a7c4-8b8d98cae1df"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dff7dc01-aa6c-45d2-8808-7861f8089cdc"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="1e6997f0-842c-4b58-a1df-18c4bac9748d"
+                  LastKnownName="Ingresar edad"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction
+            Id="1e6997f0-842c-4b58-a1df-18c4bac9748d"
+            name="Ingresar edad"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a9614ed7-87d9-4a87-9d8f-40db77a93ca0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f6a6f715-9ff3-4184-8d53-44478d278fe3"
+                  LastKnownName="Ingresar sugerencia"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction
+            Id="f48761f3-86e4-41e3-b905-e4f9d5f46e46"
+            name="Someter formulario."
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="55cfd840-d077-4ec3-881d-75377c25b4b8"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="1104d0a6-f57a-4edc-81e5-f6f98c3412b0"
+                  LastKnownName="ActivityFinal11"
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode
+            Id="1104d0a6-f57a-4edc-81e5-f6f98c3412b0"
+            name="ActivityFinal11"
+            isLeaf="false" />
+          <objectNode
+            Id="6f1f6c6d-21f1-480b-a6a4-791c2c93962c"
+            name="Cliente"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="64a3dde6-3bfd-46ae-9930-ed04a8ef942c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="f6a6f715-9ff3-4184-8d53-44478d278fe3"
+            name="Ingresar sugerencia"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fa1800da-c776-4412-9521-8b1c8641f46c"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="f48761f3-86e4-41e3-b905-e4f9d5f46e46"
+                  LastKnownName="Someter formulario."
+                  LastKnownLocation="diagrama_actividades_1.0.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>

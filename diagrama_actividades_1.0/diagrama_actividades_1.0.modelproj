@@ -113,6 +113,13 @@
       <SubType>Content</SubType>
       <DependentUpon>EditarTipodeboleto.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="EnvioSugerencia.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EnvioSugerencia.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EnvioSugerencia.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="VerContenido.activitydiagram">
       <SubType>Content</SubType>
     </Content>

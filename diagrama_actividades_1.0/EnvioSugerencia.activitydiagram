@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bf028eba-acc4-4225-9e3a-f9a86e1c51ed" name="Activity1" linkedPackageId="ed676810-266e-4274-8774-d9ddb4d018ce" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="8c06ac96-85ad-4781-9b58-fe551c9c0f4d">
+      <elementDefinition Id="35a5074a-56e9-4e38-a9a9-35d03d4f193c" />
+      <body>Ver documento SATI_HistoriasUsuario_v2.5.0 en su inciso C3.</body>
+    </comment>
+    <comment Id="b2c0bfe7-0479-408c-9884-d6bc1a005975">
+      <elementDefinition Id="f43e9108-ed91-4771-9e30-66f04cda7339" />
+      <body>1. Usuario está autenticado en el sistema.</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="e75df31f-d000-48b6-bc35-38193780b5a1" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="b881af1c-afd6-4269-bd84-53df741e33b5">
+      <profileInstance Id="56223e49-7437-4737-b559-5a3d1fc23994" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="05dfb156-1d14-4323-880f-f4e7ea2f418c">
+      <profileInstance Id="a48826fe-764c-4ed8-b115-4ebe1b11c55c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c94dcc9a-84bc-4df1-a920-714d5d2e476b" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="a99560c2-6176-4f6d-beea-514b7b84fc7f" />
+        <nodes>
+          <initialNode Id="e75df31f-d000-48b6-bc35-38193780b5a1" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e8fdd944-2b32-41ce-a7c4-8b8d98cae1df" />
+            <flowNodeTargets>
+              <controlFlow Id="a50f8194-4969-492f-a701-ff6c6d5886ce" isLeaf="false">
+                <callBehaviorActionMoniker Id="8a64a74d-0028-4152-8fc9-646c450d9c88" LastKnownName="Ingresar edad" />
+                <elementDefinition Id="dff7dc01-aa6c-45d2-8808-7861f8089cdc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction Id="8a64a74d-0028-4152-8fc9-646c450d9c88" name="Ingresar edad" isLeaf="false">
+            <elementDefinition Id="1e6997f0-842c-4b58-a1df-18c4bac9748d" />
+            <flowNodeTargets>
+              <controlFlow Id="04ae7f9e-7bfb-47cf-bddc-b37add41b9b0" isLeaf="false">
+                <opaqueActionMoniker Id="acd0b272-107a-4bd4-ad5b-92970b4cebda" LastKnownName="Ingresar sugerencia" />
+                <elementDefinition Id="a9614ed7-87d9-4a87-9d8f-40db77a93ca0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="43792f79-2e96-4085-b35c-399bf9330e18" name="Someter formulario." isLeaf="false">
+            <elementDefinition Id="f48761f3-86e4-41e3-b905-e4f9d5f46e46" />
+            <flowNodeTargets>
+              <controlFlow Id="f77e315e-24f8-4481-8688-80752cedbf4f" isLeaf="false">
+                <activityFinalNodeMoniker Id="bcdb47af-ed07-4ec5-abd0-276e8e14c937" LastKnownName="ActivityFinal11" />
+                <elementDefinition Id="55cfd840-d077-4ec3-881d-75377c25b4b8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <activityFinalNode Id="bcdb47af-ed07-4ec5-abd0-276e8e14c937" name="ActivityFinal11" isLeaf="false">
+            <elementDefinition Id="1104d0a6-f57a-4edc-81e5-f6f98c3412b0" />
+          </activityFinalNode>
+          <objectNode Id="eb3beae9-413c-4087-a3f6-a68356358053" name="Cliente" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="6f1f6c6d-21f1-480b-a6a4-791c2c93962c" />
+            <upperBound>
+              <literalInteger Id="8b671cb6-5827-45b0-bb64-2027127c18a1" name="2147483647" value="2147483647">
+                <elementDefinition Id="64a3dde6-3bfd-46ae-9930-ed04a8ef942c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="acd0b272-107a-4bd4-ad5b-92970b4cebda" name="Ingresar sugerencia" isLeaf="false">
+            <elementDefinition Id="f6a6f715-9ff3-4184-8d53-44478d278fe3" />
+            <flowNodeTargets>
+              <controlFlow Id="350a4027-b9b2-4b61-a07e-5eed92ee64a8" isLeaf="false">
+                <callBehaviorActionMoniker Id="43792f79-2e96-4085-b35c-399bf9330e18" LastKnownName="Someter formulario." />
+                <elementDefinition Id="fa1800da-c776-4412-9521-8b1c8641f46c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ed676810-266e-4274-8774-d9ddb4d018ce" name="diagrama_actividades_1.0">
+    <elementDefinition Id="79437b18-a656-4f31-a1ec-8bb79c326494" />
+  </package>
+</activityRootModel>
